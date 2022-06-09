@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class and ID Selectors</title>
+  <link rel="stylesheet" href="foundation-exc.css">
+</head>
+
+<body>
+  <!-- 02-class-id-selectors -->
+  <p class="number-1">Number 1 - I'm a class!</p>
+  <div id="number-2">Number 2 - I'm one ID.</div>
+  <p class="number-1 number-3">Number 3 - I'm a class, but cooler!</p>
+  <div id="number-4">Number 4 - I'm another ID.</div>
+  <p class="number-5">Number 5 - I'm a class!</p>
+  <!-- 02-class-id-selectors -->
+
+  <!-- 03-grouping-selectors -->
+  <button class="first">Click Me!</button>
+  <button class="second">No, Click Me!</button>
+  <!-- 03-grouping-selectors -->
+
+  <!-- 04-chaining-selectors -->
+  <div>
+    <!-- Use the classes BELOW this line -->
+    <img class="avatar proportioned" src="./img/pexels-katho-mutodo-8434791.jpeg" alt="">
+    <img class="avatar distorted" src="./img/pexels-andrea-piacquadio-3777931.jpeg" alt="">
+  </div>
+  <!-- Use the classes ABOVE this line -->
+  <div>
+    <img class="original proportioned" src="./img/pexels-katho-mutodo-8434791.jpeg" alt="">
+    <img class="original distorted" src="./img/pexels-andrea-piacquadio-3777931.jpeg" alt="">
+  </div>
+  <!-- 04-chaining-selectors -->
+
+  <!-- 05-descendant-combinator -->
+  <div class="container">
+    <p class="text">This should be styled.</p>
+  </div>
+  <!-- un-styled in terms of this exercise -->
+  <p class="text">This should be un-styled.</p>
+  <p class="text">This should be un-styled.</p>
+  <!-- un-styled in terms of this exercise -->
+  <div class="container">
+    <p class="text">This should be styled.</p>
+    <p class="text">This should be styled.</p>
+  </div>
+  <!-- 05-descendant-combinator -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+/* 02-class-id-selectors */
+p {
+  background-color: pink;
+  font-family: Verdana, DejaVu Sans, sans-serif;
+}
+#number-2 {
+  color: blue;
+  font-size: 32px;
+}
+
+.number-3 {
+  font-size: 24px;
+}
+
+#number-4 {
+  background-color: rgb(0, 250, 125);
+  font-size: 24px;
+  font-style: bold;
+}
+/* 02-class-id-selectors */
+
+/* 03-grouping-selectors */
+button {
+  font-size: 28px;
+  font-family: Helvetica, 'Times New Roman', sans-serif;
+}
+
+.first {
+  background-color: black;
+  color: white;
+}
+
+.second {
+  background-color: yellow;
+  color: black;
+}
+/* 03-grouping-selectors */
+
+
+/* 04-chaining-selectors */
+.avatar.proportioned {
+  width: 300px;
+  height: auto;
+}
+
+.avatar.distorted {
+  width: 200px;
+  height: 400px;
+}
+/* 04-chaining-selectors */
+
+/* 05-descendant-combinator */
+.container p {
+  background-color: yellow;
+  color: red;
+  size: 20px;
+  text-align: center;
+}
+/* 05-descendant-combinator */
