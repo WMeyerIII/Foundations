@@ -3,7 +3,7 @@ img {
     height: 300px;
 }
 
-* {
+*{
   background-image: url(./img/breakfast-is-a-must.gif);
 }
 
@@ -14,6 +14,34 @@ img {
 
 li {
   color: greenyellow
+}
+
+.food {
+  color: #ff0;
+  animation: rainbow 1s linear infinite;
+}
+@keyframes rainbow {
+  0%, 100% {
+    color: violet;
+  }
+  15% {
+    color: red;
+  }
+  30% {
+    color: orange;
+  }
+  45%{
+    color:greenyellow;
+  }
+  60% {
+    color:yellowgreen;
+  }
+  75% {
+    color: blue;
+  }
+  90% {
+    color: blueviolet;
+  }
 }
 
 
