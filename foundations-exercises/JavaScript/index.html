@@ -10,7 +10,20 @@
 
 <body>
   <script>
-    console.log("Hello world!")
+    let user = prompt("Who is there?")
+    if (user == "Admin") {
+      password = prompt("Password?")
+      if (password == "TheMaster") {
+        alert("Welcome!")
+      } else if (password == "" || user == null) {
+        alert("Cancelled")
+      } else if (password != "TheMaster")
+        alert("Wrong Password")
+    } else if (user == "" || user == null) {
+      alert("Cancelled")
+    } else if (user != "Admin") {
+      alert("I don't know you.")
+    }
   </script>
 </body>
 
