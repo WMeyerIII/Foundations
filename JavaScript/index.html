@@ -10,25 +10,70 @@
 
 <body>
   <script>
-    let userName = prompt("Who is there?")
+    // let userName = prompt("Who is there?")
 
-    if (userName === "Admin") {
+    // if (userName === "Admin") {
 
-      let password = prompt("Password?")
+    //   let password = prompt("Password?")
 
-      if (password == "TheMaster") {
-        alert("Welcome!")
-      } else if (password == "" || user == null) {
-        alert("Cancelled")
-      } else {
-        alert("Wrong Password")
+    //   if (password == "TheMaster") {
+    //     alert("Welcome!")
+    //   } else if (password == "" || user == null) {
+    //     alert("Cancelled")
+    //   } else {
+    //     alert("Wrong Password")
+    //   }
+
+    // } else if (user == "" || user == null) {
+    //   alert("Cancelled")
+    // } else {
+    //   alert("I don't know you.")
+    // }
+
+    function foundations3Math() {
+      let add7 = (num1) => num1 + 7;
+      console.log(add7(0))
+
+      let multiply = (num1, num2) => num1 * num2;
+      console.log(multiply(2, 4))
+
+      let capitalize = (string) => string[0].toUpperCase() + string.slice(1).toLowerCase();
+      console.log(capitalize("woooOOw"))
+
+      function capitalize2(string) {
+        string = "weeeeeeEEE"
+        return string[0].toUpperCase() + string.slice(1).toLowerCase();
       }
 
-    } else if (user == "" || user == null) {
-      alert("Cancelled")
-    } else {
-      alert("I don't know you.")
+      console.log(capitalize2())
+
+      let capitalizeLast = (string2) => string2.slice(0, string2.length - 1) + string2[string2.length - 1].toUpperCase();
+      console.log(capitalizeLast("WooooOw"))
+
+      let lastLetter = (string3) => string3[string3.length - 1];
+      console.log(lastLetter("heeeey"))
+
     }
+
+    // foundations3Math()
+
+    let answer = parseInt(prompt("Please enter a number you would like to FizzBuzz to: "));
+
+    function fizzBuzz() {
+      for (i = 1; i <= answer; i++) {
+        if (i % 15 === 0) {
+          console.log('FizzBuzz');
+        } else if (i % 5 === 0) {
+          console.log("Buzz");
+        } else if (i % 3 === 0) {
+          console.log("Fizz")
+        } else {
+          console.log(i);
+        }
+      }
+    }
+
+    // fizzBuzz();
   </script>
 </body>
 
